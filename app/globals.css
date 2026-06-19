@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #0d0d0d;
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+  --font-mono: var(--font-mono);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: #1A1A2E;
+  --color-accent: #E8C547;
+  --color-surface: #F7F5F0;
+  --color-text-primary: #0D0D0D;
+  --color-text-muted: #6B6B6B;
+  --color-border: #E2E0DB;
+
+  --font-sans: var(--font-body);
+  --font-serif: var(--font-display);
+  --font-mono: var(--font-mono);
+
+  /* border radius utilities */
+  --radius-none: 0;
+  --radius-interactive: 8px;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+}
+
+/* Ensure no emoji anywhere – we rely on text; no specific CSS needed */
